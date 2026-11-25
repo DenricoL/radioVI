@@ -1,0 +1,6 @@
+{
+  "name": "GTA VI fm — Grand Theft Auto VI Radio Catalog & Tier List",
+  "description": "Interactive catalog of all Grand Theft Auto VI radio stations, soundtracks, individual album covers, playback, and custom Tier List Maker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

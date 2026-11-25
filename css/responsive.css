@@ -1,0 +1,231 @@
+/* Responsive Breakpoints: Laptop, Tablet, Smartphone */
+
+@media (max-width: 1024px) {
+  .topbar__nav {
+    gap: 18px;
+  }
+
+  .podcast-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .topbar__inner {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    padding: 12px 16px;
+  }
+
+  .topbar__nav {
+    order: 3;
+    flex-basis: 100%;
+    gap: 20px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-hairline);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .topbar__nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .station-profile,
+  .artist-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .station-profile__logo {
+    width: 84px;
+    height: 84px;
+  }
+
+  .station-profile__logo--logo {
+    width: 112px;
+    height: 84px;
+    padding: 8px;
+  }
+
+  .station-profile__logo--artwork {
+    width: 96px;
+    height: 96px;
+    padding: 0;
+  }
+
+  .station-profile__logo svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .player-bar__inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .player-bar__yt-slot {
+    width: 80px;
+    height: 45px;
+  }
+
+  .player-bar__controls {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .topbar__inner {
+    padding: 10px 14px;
+    gap: 8px 10px;
+  }
+
+  .brand {
+    gap: 7px;
+  }
+
+  .brand__mark {
+    height: 24px;
+  }
+
+  .brand__text {
+    font-size: 1.32rem;
+  }
+
+  .topbar__action {
+    gap: 6px;
+  }
+
+  .lang-switcher__icon {
+    display: none;
+  }
+
+  .lang-switcher__btn {
+    min-height: 30px;
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+
+  .topbar__action .btn-primary {
+    min-height: 36px;
+    padding: 7px 11px;
+    font-size: 0.78rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 42px;
+    padding: 9px 14px;
+    font-size: 0.84rem;
+  }
+
+  .explorer-shell {
+    padding: 18px 0 16px;
+  }
+
+  .explorer-shell__meta {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .search-field {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .search-field__icon {
+    left: 13px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-field__input--lg {
+    min-height: 48px;
+    padding: 11px 14px 11px 36px;
+    font-size: clamp(0.75rem, 3.45vw, 0.92rem);
+  }
+
+  .search-field:has(.search-field__clear:not([hidden])) .search-field__input--lg {
+    padding-right: 68px;
+  }
+
+  .search-field__clear {
+    right: 8px;
+    padding: 5px 9px;
+    font-size: 0.75rem;
+  }
+
+  .search-field__input {
+    font-size: clamp(0.8rem, 3.5vw, 0.92rem);
+    padding-left: 36px;
+  }
+
+  .catalog-section {
+    padding-top: 22px;
+    padding-bottom: 48px;
+  }
+
+  .explorer-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .station-filter-wrap {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .filter-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .filter-tab {
+    flex: 1 1 auto;
+    padding: 7px 10px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .stations-grid,
+  .artists-grid,
+  .tracks-grid {
+    grid-template-columns: minmax(0, 100%);
+    gap: 12px;
+  }
+
+  .spotify-card {
+    padding: 10px 12px;
+    gap: 12px;
+  }
+
+  .spotify-card__cover-wrap {
+    width: 58px;
+    height: 58px;
+  }
+
+  .podcast-overview {
+    padding: 18px;
+  }
+
+  .podcast-panel {
+    padding: 18px;
+  }
+
+  .station-hero__topbar {
+    gap: 10px;
+  }
+
+  .btn-back,
+  .btn-icon-text {
+    min-height: 44px;
+  }
+}
